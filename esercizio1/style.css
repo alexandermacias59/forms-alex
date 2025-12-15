@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #e0e0e0;
+    font-size: 2.5em;
+    margin: 20px 0 0 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #2d2d2d;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+    color: #e0e0e0;
+    font-size: 0.95em;
+}
+
+input, select, textarea {
+    padding: 12px 14px;
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    background-color: #333333;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+.user-card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease;
+    border: 1px solid #2d2d2d;
+}
+
+
+.user-card h2 {
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-size: 1.8em;
+    font-weight: 300;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.user-card p {
+    margin: 12px 0;
+    color: #b0b0b0;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.user-card p strong {
+    color: #e0e0e0;
+    font-weight: 600;
+}
