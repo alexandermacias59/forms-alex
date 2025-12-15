@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <input type="text">
+        <input type="number">
+        <input type="email">
+        <input type="checkbox">
+        <input type="datetime-local" name="" id="">
+        <input type="color" name="" id="">
+        <input type="file" name="" id="">
+        <textarea name="" id="">scrivi</textarea>
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+    </form> -->
+    <form  id="my-form" action="https://mioserver.com/api/" method="get" onsubmit="formSubmit(event)">
+        <div>
+            <label for="name">Inserisci il tuo nome: </label>
+            <input type="text" name="name" id="name" required maxlength="3">
+        </div>
+        <div>
+            <label for="surname">Inserisci il tuo cognome: </label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div>
+            <label for="yob">Inserisci il tuo anno di nascita: </label>
+            <input type="number" name="yob" id="yob">
+        </div>
+        <div>
+            <label for="gender">Inserisci il genere: </label>
+            <select name="gender" id="gender" required>
+                <option value="">seleziona un opzione</option>
+                <option value="n/a">non definito</option>
+                <option value="male">maschio</option>
+                <option value="female">femmina</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">invia</button>
+        </div>
+        
+    </form>
+
+
+    <h2>Pokemon</h2>
+    <form id="pokeform" onsubmit="getPokemon(event)">
+        <div>
+            <!-- <label for="search-string">Inserisci il nome del pokemon</label> -->
+            <input type="text" name="search-string" id="search-string" placeholder="scegli il tuo pokemon" required minlength="3">
+            <button type="submit">Cerca</button>
+        </div>
+        
+    </form>
+    <div id="pokemon-container">
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+
